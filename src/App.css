@@ -1,0 +1,10 @@
+:root{
+  font-family: "inter";
+  background-color: #F5F5F5;
+}
+/* nav bar  */
+.nav-ul li:hover{
+  background-color: rgb(234, 234, 234);
+}
+
+

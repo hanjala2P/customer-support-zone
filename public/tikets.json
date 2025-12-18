@@ -1,0 +1,110 @@
+[
+  {
+    "id": "#1002",
+    "title": "Payment Failed on Checkout",
+    "description": "Customer attempted to purchase item X but the payment failed with error code '403-DENIED'. Confirmed card details are correct.",
+    "customer": "Sarah Johnson",
+    "priority": "HIGH PRIORITY",
+    "status": "Open",
+    "createdAt": "1/15/2024"
+  },
+  {
+    "id": "#1003",
+    "title": "Feature Request: Dark Mode",
+    "description": "Requesting a persistent dark mode option for the entire application interface to improve usability at night.",
+    "customer": "David Lee",
+    "priority": "LOW PRIORITY",
+    "status": "New",
+    "createdAt": "1/16/2024"
+  },
+  {
+    "id": "#1004",
+    "title": "Slow Loading Times on Dashboard",
+    "description": "Dashboard takes over 15 seconds to load after login, regardless of browser or device. Started noticing this issue yesterday.",
+    "customer": "Emily Chen",
+    "priority": "MEDIUM PRIORITY",
+    "status": "In Progress",
+    "createdAt": "1/16/2024"
+  },
+  {
+    "id": "#1005",
+    "title": "Subscription Cancelation Error",
+    "description": "Attempted to cancel recurring subscription via the 'Manage Account' page but received an 'Unknown Error' message. Needs manual intervention.",
+    "customer": "Michael Brown",
+    "priority": "HIGH PRIORITY",
+    "status": "Open",
+    "createdAt": "1/17/2024"
+  },
+  {
+    "id": "#1006",
+    "title": "Incorrect Invoice Amount",
+    "description": "The latest monthly invoice (#INV-987) shows a charge of $99.99, but the customer's plan is only $49.99.",
+    "customer": "Jessica Garcia",
+    "priority": "MEDIUM PRIORITY",
+    "status": "New",
+    "createdAt": "1/17/2024"
+  },
+  {
+    "id": "#1007",
+    "title": "Missing Documentation for API Endpoint /v2/data",
+    "description": "The new API endpoint for retrieving user data does not have corresponding documentation or examples in the developer portal.",
+    "customer": "Robert Wilson",
+    "priority": "MEDIUM PRIORITY",
+    "status": "Assigned",
+    "createdAt": "1/18/2024"
+  },
+  {
+    "id": "#1008",
+    "title": "Mobile App Crashes on Android 14",
+    "description": "The application consistently crashes immediately upon launch on all devices running the latest Android 14 OS. Urgent fix needed.",
+    "customer": "Linda Martinez",
+    "priority": "HIGH PRIORITY",
+    "status": "Open",
+    "createdAt": "1/18/2024"
+  },
+  {
+    "id": "#1009",
+    "title": "Request for Data Export",
+    "description": "Customer requires a full CSV export of their historical usage data for the past 6 months.",
+    "customer": "James Hernandez",
+    "priority": "LOW PRIORITY",
+    "status": "New",
+    "createdAt": "1/19/2024"
+  },
+  {
+    "id": "#1010",
+    "title": "UI Misalignment on Safari Browser",
+    "description": "On Safari (version 17.2), the navigation bar overflows the container, causing visual artifacts. Works fine on Chrome/Firefox.",
+    "customer": "Maria Lopez",
+    "priority": "MEDIUM PRIORITY",
+    "status": "In Progress",
+    "createdAt": "1/19/2024"
+  },
+  {
+    "id": "#1011",
+    "title": "Account Reactivation Required",
+    "description": "Previous account was deactivated due to non-payment. Customer has paid outstanding balance and requires immediate reactivation.",
+    "customer": "William Young",
+    "priority": "HIGH PRIORITY",
+    "status": "Open",
+    "createdAt": "1/20/2024"
+  },
+  {
+    "id": "#1012",
+    "title": "Broken Link in Email Notification",
+    "description": "The 'Reset Password' link in the automated email notification leads to a 404 error page.",
+    "customer": "Patricia King",
+    "priority": "MEDIUM PRIORITY",
+    "status": "New",
+    "createdAt": "1/20/2024"
+  },
+  {
+    "id": "#1013",
+    "title": "Suggestion: Add bulk editing capability",
+    "description": "Users should be able to select multiple records and apply the same update/change in a single action.",
+    "customer": "Charles Scott",
+    "priority": "LOW PRIORITY",
+    "status": "New",
+    "createdAt": "1/21/2024"
+  }
+]
