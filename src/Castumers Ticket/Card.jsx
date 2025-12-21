@@ -7,9 +7,8 @@ const Card = ({ CardPromise,handleSelectedCard }) => {
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-
       {cards.map((card, index) => (
-        <div onClick={handleSelectedCard}
+        <div onClick={() => handleSelectedCard(card.id)}
           key={index}
           className="bg-white p-4 rounded-lg shadow-md flex flex-col justify-between"
         >

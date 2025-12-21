@@ -1,7 +1,7 @@
 import Task from '../assets/Task/Task';
 import Card from '../Castumers Ticket/Card';
 
-const CustomerTiket = ({ CardPromise,handleSelectedCard }) => {
+const CustomerTiket = ({ CardPromise,handleSelectedCard,handleResolvedData }) => {
   return (
     <div className="mx-4 sm:mx-6 lg:mx-20 mt-8 mb-16 text-black ">
 
@@ -14,13 +14,15 @@ const CustomerTiket = ({ CardPromise,handleSelectedCard }) => {
           </p>
 
           <div className="mt-2">
-            <Card handleSelectedCard={handleSelectedCard} CardPromise={CardPromise} />
+  
+            <Card handleSelectedCard={handleSelectedCard} CardPromise={CardPromise}
+            ></Card>
           </div>
         </div>
 
         {/* Right Section (Task Sidebar) */}
         <div className="w-full">
-          <Task />
+          <Task handleResolvedData={handleResolvedData}></Task>
         </div>
 
       </div>

@@ -2,7 +2,7 @@ import React from "react";
 import inProgressBg from "../../assets/Logo/vector1.png";
 // import resolvedBg from "../../assets/Logo/vector2.png";
 
-const TaskStatus = ({count}) => {
+const TaskStatus = ({inProgress, resolved}) => {
   
   return (
     <div className="mx-10 lg:mx-20 grid mt-6 grid-cols-1 sm:grid-cols-2 gap-4 ">
@@ -32,7 +32,7 @@ const TaskStatus = ({count}) => {
 
         <div className="relative z-10 text-white text-center">
           <p className="text-sm sm:text-base">In-Progress</p>
-          <h2 className="text-2xl sm:text-3xl font-bold">{count}</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold">{inProgress}</h2>
         </div>
       </div>
 
@@ -61,7 +61,8 @@ const TaskStatus = ({count}) => {
 
         <div className="relative z-10 text-white text-center">
           <p className="text-sm sm:text-base">Resolved</p>
-          <h2 className="text-2xl sm:text-3xl font-bold">5</h2>
+      
+          <h2 className="text-2xl font-bold">{resolved}</h2>
         </div>
       </div>
 
