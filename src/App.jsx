@@ -15,6 +15,7 @@ const fetchCard = async () => {
 };
 const CardPromise = fetchCard();
 
+
 function App() {
   const [inProgress, setInProgress] = useState(0);
   const [resolved, setResolved] = useState(0);
@@ -23,9 +24,9 @@ function App() {
   const [selectedCards, setSelectedCards] = useState([]);
 
   // Card click korle check korbe jeta age add hoyeche kina
-  const handleSelectedCard = (cardId) => {
+  const handleSelectedCard = (card) => {
     // Check korchi cardId-ti age theke list-e ache kina
-    const isAlreadyAdded = selectedCards.find(id => id === cardId);
+    const isAlreadyAdded = selectedCards.find(item => item.id === card.id);
 
     if (isAlreadyAdded) {
       // Jodi agei add hoye thake
@@ -36,7 +37,7 @@ function App() {
     } else {
       // Jodi notun hoy, tobe count barbe r ID-ti track rakha hobe
       setInProgress((prev) => prev + 1);
-      setSelectedCards([...selectedCards, cardId]);
+      setSelectedCards([...selectedCards, card]);
       
       toast.info(`Ticket added to In-Progress!`, {
         position: "top-right",
@@ -52,7 +53,7 @@ function App() {
       setResolved((prev) => prev + 1);
       
       // Resolve hoye gele selected list theke ID-ti shoriye fela jate pore abar add kora jay
-      const remainingCards = selectedCards.filter(id => id !== cardId);
+      const remainingCards = selectedCards.filter(item => item.id !== cardId);
       setSelectedCards(remainingCards);
 
       toast.success("Ticket Resolved Successfully! 🎉", {
@@ -72,6 +73,7 @@ function App() {
       <TaskStatus
         inProgress={inProgress}
         resolved={resolved}
+        
       />
 
       <Suspense
@@ -85,6 +87,7 @@ function App() {
           handleSelectedCard={handleSelectedCard}
           CardPromise={CardPromise}
           handleResolvedData={handleResolvedData}
+          selectedCards={selectedCards}
         />
       </Suspense>
 

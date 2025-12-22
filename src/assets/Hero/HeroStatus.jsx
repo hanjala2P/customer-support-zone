@@ -20,7 +20,7 @@ const TaskStatus = ({inProgress, resolved}) => {
         {/* LEFT BG (reversed) */}
         <img
           src={inProgressBg}
-          alt="In Progress Left"
+          alt="In Progress Left"j
           className="absolute left-0 top-0 w-80 h-full object-cover opacity-60 pointer-events-none transform scale-y-[1]"
         />
         {/* RIGHT BG (reversed) */}

@@ -1,6 +1,6 @@
 import TaskStatusCard from "../Task status card/TaskStatusCard";
 import ResolvedCard from "../Task/Resolved Card/ResolvedCard";
-const Task = ({handleResolvedData, CardPromise}) => {
+const Task = ({handleResolvedData, CardPromise, selectedCards}) => {
   return (
     <div className="p-4 sm:p-4 lg:p-0 flex flex-col gap-6">
 
@@ -10,7 +10,7 @@ const Task = ({handleResolvedData, CardPromise}) => {
           Task Status
         </h4>
 
-        <TaskStatusCard  CardPromise={CardPromise} handleResolvedData={handleResolvedData}></TaskStatusCard>
+        <TaskStatusCard  selectedCards={ selectedCards} CardPromise={CardPromise} handleResolvedData={handleResolvedData}></TaskStatusCard>
         <p className="text-[#627382] text-sm sm:text-base mt-1">
           Select a ticket to add to Task Status
         </p>
