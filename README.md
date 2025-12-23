@@ -1,17 +1,21 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Customer Support Zone
+## Live Link: [https://custimer-suppport-zone.mdhanjala016pc.workers.dev/](https://custimer-suppport-zone.mdhanjala016pc.workers.dev/)
 
-Currently, two official plugins are available:
+### Related Questions and Answers
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. **What is JSX, and why is it used?**
+   **ANS:** JSX is a syntax extension for JavaScript that allows you to write HTML-like structures directly within your code. It is primarily used in React to make UI development more intuitive by visually representing the component hierarchy.
 
-## React Compiler
+2. **What is the difference between State and Props?**
+   **ANS:** Props are read-only inputs passed from a parent component to a child, acting like function arguments to configure the component. State is internal data managed within the component itself that can change over time, usually in response to user actions or events. When props or state change, React automatically re-renders the component to keep the UI in sync with the new data.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+3. **What is the useState hook, and how does it work?**
+   **ANS:** `useState` is a React Hook that adds a local state variable to a functional component to track data that changes over time. It returns an array containing the current state value and a setter function, which triggers a re-render whenever the state is updated.
 
-## Expanding the ESLint configuration
+4. **How can you share state between components in React?**
+   **ANS:** You can share state by "lifting state up"—moving the state to the closest common parent and passing it down to children via props.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# Castumer-support-zone
+5. **How is event handling done in React?**
+   **ANS:** In React, event handling uses camelCase syntax (like `onClick`) and passes a function instead of a string to the event listener. We must explicitly call `e.preventDefault()` to stop default browser actions, as returning `false` does not work in JSX.
